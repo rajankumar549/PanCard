@@ -41,6 +41,8 @@ namespace PanCard.Controllers
         {
             ViewBag.Message = "Your contact page.";
             LogFileWrite.write("form submitted Sucessfull.......");
+            LogFileWrite.write("form submitted Sucessfull............");
+
             return View();
         }
     }
