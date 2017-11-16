@@ -16,9 +16,9 @@ namespace PanCard.Models
         public string reg_mob2 { get; set; }
         public string reg_whatsapp { get; set; }
         public string reg_email { get; set; }
-
-
         public string reg_shop { get; set; }
+
+
         public string reg_add { get; set; }
         public string reg_city { get; set; }
         public string reg_state { get; set; }
@@ -30,8 +30,8 @@ namespace PanCard.Models
         public string reg_bank_name { get; set; }
         public string reg_ifsc { get; set; }
 
-        public HttpPostedFile reg_add_doc { get; set; }
-        public HttpPostedFile reg_pan_doc { get; set; }
-        public HttpPostedFile reg_photo { get; set; }
+        public HttpPostedFileBase reg_add_doc { get; set; }
+        public HttpPostedFileBase reg_pan_doc { get; set; }
+        public HttpPostedFileBase reg_photo { get; set; }
     }
 }
