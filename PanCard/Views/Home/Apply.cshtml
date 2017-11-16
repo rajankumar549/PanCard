@@ -1,0 +1,199 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Register</h2>
+<br /><br />
+
+<div id="form_start">
+    <div id="msg"></div>
+    <form id="register-form" method="post">
+        <div class="form-horizontal">
+            <div class="form-group form-group-sm">
+                <label for="reg_fullname" class="col-sm-2">Applicant Name</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="reg_fullname" name="reg_fullname" placeholder="Full Name">
+                </div>
+
+            </div>
+
+            <div class="form-group form-group-sm">
+                <label for="reg_father_name" class="col-sm-2">Father Name</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="reg_father_name" name="reg_father_name" placeholder="Father Name">
+                </div>
+            </div>
+            <div class="form-group form-group-sm">              
+                <label for="reg_dob" class="col-sm-2">DOB</label>
+                <div class="col-sm-4">
+                    <input type="date" class="form-control" id="reg_dob" name="reg_dob" placeholder="Date Of birth">
+                </div>
+                <label for="reg_gender" class="col-sm-2">Gender</label>
+                <div class="col-sm-4">
+                    <select class="form-control" name="cars">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                       
+                    </select>
+                </div>
+            </div>
+            <div class="form-group form-group-sm">
+                <label for="reg_cardname" class="col-sm-2">Card Name</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="reg_cardname" name="reg_cardname" placeholder="Card Name">
+                </div>
+
+            </div>
+            <div class="form-group form-group-sm">
+                <label for="reg_addhar_no" class="col-sm-2">Aadaar Number</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="reg_addhar_no" name="reg_addhar_no" placeholder="Addhar No">
+                </div>
+                <label for="reg_pan_no" class="col-sm-2">Aadaar Name</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="reg_pan_no" name="reg_pan_no" placeholder="Pan No">
+                </div>
+            </div>
+           
+           
+
+           
+            <h2>ADDRESS CONFIRMATION</h2>
+            <br /><br />
+            <div class="form-group form-group-sm">
+                <label for="reg_add" class="col-sm-2">Address</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="reg_add" name="reg_add" placeholder="Full address">
+                </div>
+            </div>
+            <div class="form-group form-group-sm">
+                <label for="reg_city" class="col-sm-2">City</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="reg_city" name="reg_city" placeholder="City">
+                </div>
+                <label for="reg_state" class="col-sm-2">State</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="reg_state" name="reg_state" placeholder="State">
+                </div>
+                <label for="reg_pin" class="col-sm-2">Pin</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="reg_pin" name="reg_pin" placeholder="Pincode">
+                </div>
+            </div>
+            
+
+
+
+           <h2>Document Proof</h2>
+            <br /><br />
+            <div class="form-group form-group-sm">
+                <label for="reg_mob1" class="col-sm-2">Proof of Identity</label>
+                <div class="col-sm-4">
+                    <select class="form-control" name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group form-group-sm">
+                <label for="reg_email" class="col-sm-2">Proof of Address</label>
+                <div class="col-sm-4">
+                    <select class="form-control" name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group form-group-sm">
+                <label for="reg_email" class="col-sm-2">Proof of DOB</label>
+                <div class="col-sm-4">
+                    <select class="form-control" name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+
+                 <h2>Documets</h2>
+                <br /><br />
+
+                <div class="form-group form-group-sm">
+                    <label for="reg_add_doc" class="col-sm-2">Adhar card</label>
+                    <div class="col-sm-4">
+                        <input type="file" class="form-control" id="reg_add_doc" name="reg_add_doc" placeholder="username">
+                    </div>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label for="reg_pan_doc" class="col-sm-2">Pan Card</label>
+                    <div class="col-sm-4">
+                        <input type="file" class="form-control" id="reg_pan_doc" name="reg_pan_doc" placeholder="username">
+                    </div>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label for="reg_photo" class="col-sm-2">Photo</label>
+                    <div class="col-sm-4">
+                        <input type="file" class="form-control" id="reg_photo" name="reg_photo" placeholder="username">
+                    </div>
+                </div>
+            </div>
+
+        <button type="submit" class="form-control btn btn-success">Register</button>
+    </form>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $("#register-form").validate({
+            rules: {
+                reg_fullname: "required",
+                reg_father_name: "required",
+                reg_dob: "required",
+                reg_addhar_no: "required",
+                reg_pan_no: "required",
+                reg_mob1: "required",
+                reg_email: {
+                    required: true,
+                    email: true
+                },
+                reg_shop: "required",
+                reg_add: "required",
+                reg_city: "required",
+                reg_state: "required",
+                reg_pin: "required",
+                reg_acc_name: "required",
+                reg_acc_no: "required",
+                reg_bank_name: "required",
+                reg_ifsc: "required",
+                reg_add_doc: "required",
+                reg_pan_doc: "required",
+                reg_pan_photo: "required"
+            },
+            errorClass: "form-invalid",
+            errorPlacement: function (label, element) {
+                    if (element.attr("type") === "checkbox" || element.attr("type") === "radio") {
+                        element.parent().append(label); // this would append the label after all your checkboxes/labels (so the error-label will be the last element in <div class="controls"> )
+                    }
+                    else {
+                        label.insertAfter(element); // standard behaviour
+                    }
+
+                }
+
+        });
+    });
+
+</script>
+
